@@ -342,13 +342,13 @@ Intervalle de simulation : 2 secondes (configurable)
 ## 🎨 Démonstration
 
 ### Dashboard principal
-![Dashboard](docs/dashboard-preview.png)
+<img width="1919" height="908" alt="Capture d&#39;écran 2026-03-01 003052" src="https://github.com/user-attachments/assets/101d31f3-5047-45d7-863c-8cb3f5b095b3" />
 
 ### Modal de détails
-![Equipment Detail](docs/equipment-detail.png)
+<img width="1894" height="961" alt="image" src="https://github.com/user-attachments/assets/0c363fc4-a99f-4f2e-b6a5-91b69306eb86" />
 
 ### Système d'alertes
-![Alerts](docs/alerts-preview.png)
+<img width="1898" height="902" alt="image" src="https://github.com/user-attachments/assets/a2c5f133-c649-46f3-8388-b8036555bffc" />
 
 ## 🧪 Tests
 
@@ -394,29 +394,7 @@ db.commit()
 
 Les composants de graphiques sont dans `frontend/src/components/RealtimeChart.jsx`. Modifiez les couleurs, axes, ou style selon vos besoins.
 
-## 🚀 Déploiement
 
-### Production Build
-
-**Backend:**
-```bash
-cd backend
-pip install -r requirements.txt
-gunicorn main:app --workers 4 --worker-class uvicorn.workers.UvicornWorker --bind 0.0.0.0:8000
-```
-
-**Frontend:**
-```bash
-cd frontend
-npm run build
-# Servir le dossier dist/ avec nginx ou autre
-```
-
-### Docker (à venir)
-
-```bash
-docker-compose -f docker-compose.prod.yml up -d
-```
 
 
 
